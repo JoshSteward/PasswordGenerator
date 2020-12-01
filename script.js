@@ -45,5 +45,41 @@ generateBtn.addEventListener("click", writePassword);
     console.log("Password to include special characters?: " +specialCharacters);
   }
 
+  //Add DOM elements based on prompts 
+  const resultEl = document.getElementById("result");
+  const passwordLengthEl = document.getElementById("length");
+  const lowerCaseEl = document.getElementById("lowercase");
+  const upperCaseEl = document.getElementById("uppercase");
+  const numbersEl = document.getElementById("numbers");
+  const specialCharactersEl = document.getElementById("special");
 
+  // constant containing all functions 
+  cont randomFunc() = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: randomNumber,
+    special: randomSpecial
+  };
+
+// functions to generate random letter 
+
+function  getRandomUpper() {
+  return String.fromCharCode(Math.floor(Math.random()*26)+65);
+}
+
+function getRandomLower() {
+  return String.fromCharCode(Math.floor(Math.random()*26)+97);
+}
+
+function randomNumber() {
+  return String.fromCharCode(Math.floor(Math.random()*10)+48);
+}
+
+function randomSpecial() {
+  const symbols = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  return symbols[Math.floor(Math.random()*symbols.length)];
+
+}
+
+console.log(randomSpecial());
 
