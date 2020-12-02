@@ -12,15 +12,6 @@ function writePassword(lower, upper, number, special, passwordLength) {
   const typesCount = upperCase + lowerCase + numbers + specialCharacters;
   console.log(typesCount);
 
-  for (let i = 0; i <passwordLength; i+=typesCount) {
-    typesCount.forEach(type => {
-      const funcName = Object.keys(type)[0];
-      console.log('funcName', funcName);
-
-      generatePassword += randomFunc[funcName]();
-    })
-  }
-
   passwordText.value = password;
 
 }
@@ -114,6 +105,16 @@ function randomSpecial() {
 
 }
 
+
+function generatePassword() { 
+
+
+
+
+
+}
+
+
 console.log(randomSpecial());
 
 const typesArr = [{upperCase}, {lowerCase}, {numbers}, {specialCharacters}].filter(item => Object.values(item)[0]);
@@ -121,6 +122,9 @@ console.log(typesArr);
 
 const typesCount = upperCase + lowerCase + numbers + specialCharacters;
   console.log(typesCount);
+
+
+
 
 
 
