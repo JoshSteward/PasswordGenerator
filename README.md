@@ -21,4 +21,4 @@ THEN the password is either displayed in an alert or written to the page
 
 <h1> Mock up of the App </h1>
 
-[03-javascript-homework-demo](https://user-images.githubusercontent.com/73278132/100957746-27c81c80-356f-11eb-8244-8ab1d7c80b69.png)
+![Passcode-javascript--demo](https://user-images.githubusercontent.com/73278132/100958053-b89ef800-356f-11eb-9b8a-86dd6f1a196f.png)
