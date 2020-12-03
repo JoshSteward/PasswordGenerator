@@ -1,5 +1,7 @@
 # PasswordGenerator
-This application generates a random password 
+This application generates a random password, as can be seen in the link below: 
+
+https://joshsteward.github.io/PasswordGenerator/
 
 <h1> How the App works </h1>
 
